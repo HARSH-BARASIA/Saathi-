@@ -32,6 +32,10 @@
             z-index: 10;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .navbar .logo img {
+            height: 50px;
+            margin-right: 20px;
+        }
         .navbar a {
             color: #66fcf1;
             text-decoration: none;
@@ -50,13 +54,12 @@
             margin-left: 10px;
             font-weight: bold;
             transition: background-color 0.3s ease, color 0.3s ease;
-            display: inline-block; /* Make sure buttons are inline */
+            display: inline-block;
         }
         .navbar .auth-buttons a:hover {
             background-color: #45a29e;
             color: #fff;
         }
-
 
         /* Hero Section */
         .hero {
@@ -167,6 +170,9 @@
 
     <!-- Navbar -->
     <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Saathi Logo"></a>
+        </div>
         <div class="menu">
             <a href="housing.html">Housing</a>
             <a href="legal.html">Legal Support</a>
@@ -175,7 +181,7 @@
             <a href="employment.html">Employment</a>
             <a href="healthcare.html">Healthcare</a>
         </div>
-         <div class="auth-buttons">
+        <div class="auth-buttons">
             <a href="getstarted.html">Sign Up</a>
             <a href="signin.html">Sign In</a>
         </div>
