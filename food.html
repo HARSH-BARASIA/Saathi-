@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Food Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #66fcf1;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-top: 15px;
+            color: #66fcf1;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Content Section */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #66fcf1;
+        }
+
+        .services {
+            margin: 30px 0;
+        }
+
+        .services h2 {
+            font-size: 1.7em;
+            margin: 20px 0;
+            color: #66fcf1;
+        }
+
+        .services p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .actions .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .actions .button:hover {
+            background-color: #45a29e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Housing</a>
+            <a href="legal.html">Legal Support</a>
+            <a href="cultural.html">Cultural Programs</a>
+            <a href="employment.html">Employment</a>
+            <a href="healthcare.html">Healthcare</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Food Services Page Content -->
+    <div class="hero">
+        <h1>Food Services</h1>
+        <h2>Savor and Enjoy</h2>
+        <p>Explore our comprehensive food services, from local dining options to grocery delivery, tailored for your convenience.</p>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container">
+        <div class="services">
+            <h2>Local Dining</h2>
+            <p>Discover local restaurants and cafes that offer a taste of the local cuisine. Recommendations and reviews included.</p>
+
+            <h2>International Cuisine</h2>
+            <p>Find restaurants that cater to international tastes and offer a variety of global dishes.</p>
+
+            <h2>Grocery Delivery</h2>
+            <p>Access grocery delivery services to have essentials and specialty items delivered to your door.</p>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="actions">
+            <a href="#" class="button">Explore Services</a>
+        </div>
+    </div>
+
+</body>
+</html>

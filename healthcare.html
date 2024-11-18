@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Healthcare Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+        /* Page Container */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1f2833;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Section Styles */
+        .section {
+            margin: 30px 0;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #66fcf1;
+            font-weight: 600;
+        }
+        .section p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a29e;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Housing</a>
+            <a href="legal.html">Legal Support</a>
+            <a href="cultural.html">Cultural Programs</a>
+            <a href="food.html">Food Services</a>
+            <a href="employment.html">Employment</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Healthcare Navigation Page Content -->
+    <div class="container">
+        <h1>Healthcare Navigation Platform</h1>
+
+        <!-- Healthcare Guide Section -->
+        <div class="section">
+            <h2>Healthcare Guide</h2>
+            <p>Our comprehensive guide helps you navigate healthcare systems, understand health insurance requirements, and explore coverage options. Learn about policies and prepare for all your healthcare needs in your new country.</p>
+        </div>
+
+        <!-- Telehealth with Multilingual Support Section -->
+        <div class="section">
+            <h2>Telehealth with Multilingual Support</h2>
+            <p>Partnering with top telehealth providers, we offer online consultations in multiple languages. Speak with healthcare professionals in a language you're comfortable with, from the comfort of your home.</p>
+        </div>
+
+        <!-- Directory of Providers Section -->
+        <div class="section">
+            <h2>Directory of Providers</h2>
+            <p>Access a curated directory of local hospitals, clinics, and healthcare providers. Read user reviews, get recommendations, and choose the best options for your medical needs.</p>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="actions">
+            <a href="#" class="button">Explore Healthcare Services</a>
+        </div>
+    </div>
+
+</body>
+</html>

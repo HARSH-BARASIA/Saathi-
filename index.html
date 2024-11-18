@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Saath Samundar Paar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block; /* Make sure buttons are inline */
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 600;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-top: 15px;
+            color: #66fcf1;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #45a29e;
+            color: white;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+        .feature {
+            flex: 1;
+            max-width: 300px;
+            padding: 20px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature a {
+            color: #1f2833;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .feature a:hover {
+            color: #66fcf1;
+        }
+        .feature p {
+            color: #555;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background-color: #1f2833;
+            color: white;
+            text-align: center;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .testimonial .author {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0b0c10;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="housing.html">Housing</a>
+            <a href="legal.html">Legal Support</a>
+            <a href="cultural.html">Cultural Programs</a>
+            <a href="food.html">Food Services</a>
+            <a href="employment.html">Employment</a>
+            <a href="healthcare.html">Healthcare</a>
+        </div>
+         <div class="auth-buttons">
+            <a href="getstarted.html">Sign Up</a>
+            <a href="signin.html">Sign In</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Saathi</h1>
+        <h2>Saath Samundar Paar</h2>
+        <p>Your global companion for transitioning into a new country smoothly.</p>
+        <a href="getstarted.html" class="button">Get Started</a>
+    </div>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <a href="housing.html">Housing Assistance</a>
+            <p>Discover reliable housing options that match your budget and preferences, making relocation easier.</p>
+        </div>
+        <div class="feature">
+            <a href="legal.html">Legal Support</a>
+            <p>Access resources to navigate legal requirements and documentation with confidence.</p>
+        </div>
+        <div class="feature">
+            <a href="cultural.html">Cultural Programs</a>
+            <p>Join cultural events and connect with a diverse community to feel right at home.</p>
+        </div>
+        <div class="feature">
+            <a href="food.html">Food Services</a>
+            <p>Explore local food options that cater to diverse tastes and dietary needs.</p>
+        </div>
+        <div class="feature">
+            <a href="employment.html">Employment Services</a>
+            <p>Find job opportunities and receive guidance for building a fulfilling career abroad.</p>
+        </div>
+        <div class="feature">
+            <a href="healthcare.html">Healthcare Navigation</a>
+            <p>Get support to understand and access healthcare services in your new location.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonial">
+            <p>"Saathi helped me find my first apartment and connected me with my community in a new country. Truly a lifesaver!"</p>
+            <div class="author">- Priya K.</div>
+        </div>
+        <div class="testimonial">
+            <p>"Navigating legal paperwork was stressful until I used Saathi. They made the process straightforward and manageable."</p>
+            <div class="author">- John D.</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Saathi. All Rights Reserved.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Cultural Programs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #66fcf1; /* Fixed color for consistency */
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-top: 15px;
+            color: #66fcf1;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #45a29e;
+            color: white;
+        }
+
+        /* Content Section */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #66fcf1; /* Fixed color for consistency */
+        }
+
+        .programs {
+            margin: 30px 0;
+        }
+
+        .programs h2 {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #66fcf1;
+        }
+
+        .programs p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .actions .button {
+            padding: 15px 30px;
+            background-color: #66fcf1;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .actions .button:hover {
+            background-color: #45a29e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Housing</a>
+            <a href="legal.html">Legal Support</a>
+            <a href="food.html">Food Services</a>
+            <a href="employment.html">Employment</a>
+            <a href="healthcare.html">Healthcare</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Cultural Programs</h1>
+        <h2>Connect and Experience</h2>
+        <p>Explore a wide range of programs that introduce you to new cultures and help you settle into your new home.</p>
+    </div>
+
+    <!-- Cultural Programs Page Content -->
+    <div class="container">
+        <!-- Programs Section -->
+        <div class="programs">
+            <h2>Language Classes</h2>
+            <p>Enhance your language skills with our language classes. Various levels are available for all proficiency stages.</p>
+
+            <h2>Cultural Workshops</h2>
+            <p>Participate in workshops that introduce you to local traditions, festivals, and cultural practices.</p>
+
+            <h2>Networking Events</h2>
+            <p>Connect with other expatriates and locals through our networking events and social gatherings.</p>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="actions">
+            <a href="#" class="button">Join a Program</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Housing Support</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8; /* Matches home page background color */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            display: inline-block;
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1f2833 0%, #0b0c10 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: 600;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-top: 15px;
+            color: #66fcf1;
+        }
+        .hero p {
+            font-size: 1.1em;
+            margin-top: 15px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #45a29e;
+            color: white;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #0b0c10;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Container and Content */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1f2833;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .filters {
+            margin: 20px 0;
+        }
+        .filters label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .filters input, .filters select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .map {
+            margin: 30px 0;
+            height: 300px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .actions {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="legal.html">Legal Support</a>
+            <a href="cultural.html">Cultural Programs</a>
+            <a href="food.html">Food Services</a>
+            <a href="employment.html">Employment</a>
+            <a href="healthcare.html">Healthcare</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Housing Support Page Content -->
+    <div class="container">
+        <h1>Housing Support</h1>
+
+        <!-- Search Filters Section -->
+        <div class="filters">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter city or neighborhood">
+
+            <label for="budget">Budget Range:</label>
+            <select id="budget" name="budget">
+                <option value="low">Below $500</option>
+                <option value="medium">$500 - $1000</option>
+                <option value="high">Above $1000</option>
+            </select>
+
+            <label for="type">Type of Housing:</label>
+            <select id="type" name="type">
+                <option value="shared">Shared</option>
+                <option value="single">Single</option>
+                <option value="family">Family</option>
+            </select>
+
+            <label for="date">Move-in Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <!-- Map Integration Section -->
+        <div class="map">
+            <p>Map of Available Listings</p>
+        </div>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="actions">
+            <a href="#" class="button">Contact Agent</a>
+            <a href="#" class="button">Request Legal Help</a>
+        </div>
+    </div>
+
+</body>
+</html>

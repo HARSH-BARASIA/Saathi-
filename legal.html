@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saathi - Legal Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Navbar Styles */
+        .navbar {
+            background-color: #1f2833;
+            color: #fff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #66fcf1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #45a29e;
+        }
+        .navbar .auth-buttons a {
+            background-color: #66fcf1;
+            color: #1f2833;
+            border-radius: 5px;
+            padding: 8px 15px;
+            margin-left: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar .auth-buttons a:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1f2833;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        /* Form Section */
+        .form-section label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #1f2833;
+        }
+        .form-section input,
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+        .form-section input:focus,
+        .form-section select:focus {
+            outline: none;
+            border-color: #66fcf1;
+            box-shadow: 0 0 5px rgba(102, 252, 241, 0.5);
+        }
+        .form-section input:hover,
+        .form-section select:hover {
+            border-color: #45a29e;
+        }
+
+        /* Buttons */
+        .actions {
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #66fcf1;
+            color: #1f2833;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s;
+        }
+        .button:hover {
+            background: #45a29e;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0b0c10;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="housing.html">Housing</a>
+            <a href="cultural.html">Cultural Programs</a>
+            <a href="food.html">Food Services</a>
+            <a href="employment.html">Employment</a>
+            <a href="healthcare.html">Healthcare</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Legal Support</h1>
+        <div class="form-section">
+            <label for="visa">Visa Support</label>
+            <select id="visa" name="visa">
+                <option value="" disabled selected>Select Visa Type</option>
+                <option value="student">Student Visa</option>
+                <option value="work">Work Visa</option>
+                <option value="tourist">Tourist Visa</option>
+            </select>
+
+            <label for="permit">Work Permit Guidance</label>
+            <select id="permit" name="permit">
+                <option value="" disabled selected>Select Guidance Type</option>
+                <option value="application">Application Process</option>
+                <option value="renewal">Renewal Process</option>
+                <option value="consultation">Consultation</option>
+            </select>
+
+            <label for="consultation">Legal Consultations</label>
+            <input type="text" id="consultation" name="consultation" placeholder="Enter your query">
+        </div>
+        <div class="actions">
+            <a href="#" class="button">Book Consultation</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2024 Saathi. All Rights Reserved.
+    </div>
+
+</body>
+</html>
